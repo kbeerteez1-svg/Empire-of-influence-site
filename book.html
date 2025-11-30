@@ -45,7 +45,7 @@
     </div>
   </header>
 
-  <!-- Hero / Subscribe layout (inspired by The Knowledge) -->
+  <!-- Hero / Subscribe layout -->
   <section class="hero" id="subscribe">
     <div class="container hero__inner">
       <!-- Left: Copy, bullets -->
@@ -65,5 +65,230 @@
           world you’re building in.
         </p>
 
-        <p style="font-we
+        <p style="font-weight:600; margin: 1rem 0 0.4rem;">
+          Here’s why you should subscribe:
+        </p>
+        <ul class="plan-card__list" style="margin-bottom:1.2rem;">
+          <li>One focused, high-signal memo each month</li>
+          <li>Explainers that connect politics to real business decisions</li>
+          <li>Frameworks and mental models you can apply immediately</li>
+          <li>Written for builders: founders, operators, ambitious employees</li>
+          <li>Takes minutes to read, sticks in your head for weeks</li>
+        </ul>
+
+        <p style="font-size:0.8rem; color:#9ca3af; max-width:460px;">
+          By subscribing you agree to receive The Empire of Influence newsletter
+          via email. You can unsubscribe at any time in a couple of clicks.
+        </p>
+      </div>
+
+      <!-- Right: Price / subscribe card -->
+      <div class="hero__card">
+        <h2 style="margin-bottom:0.4rem;">Subscribe now</h2>
+        <p style="color:#9ca3af; font-size:0.9rem; margin-bottom:1rem;">
+          Join the list and start getting monthly power memos in your inbox.
+        </p>
+
+        <div class="hero-card__price" style="margin-bottom:0.8rem;">
+          <div class="hero-card__price-now">
+            <span class="label">Membership</span>
+            <span class="price">£3<span>/month</span></span>
+          </div>
+        </div>
+
+        <!-- REAL FORM STRUCTURE (wire this to your provider) -->
+        <!-- For Substack/Ghost/Mailchimp/etc, replace the action URL and inputs according to their embed docs -->
+        <form
+          class="subscribe-form"
+          action="https://YOUR-PROVIDER-ENDPOINT-HERE"
+          method="post"
+          target="_blank"
+          novalidate
+        >
+          <div class="form-field">
+            <label for="email" class="form-label">
+              Email address
+            </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              class="form-input"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+
+          <!-- Optional: name field – remove if your provider doesn’t use it -->
+          <div class="form-field">
+            <label for="name" class="form-label">
+              Name (optional)
+            </label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              class="form-input"
+              placeholder="Who should I address it to?"
+            />
+          </div>
+
+          <!-- If your provider needs hidden fields (like list ID), add them here -->
+
+          <button class="btn btn--primary btn--full" type="submit">
+            Join the newsletter for £3/month
+          </button>
+
+          <p class="form-help">
+            Replace the <code>action</code> above with the subscribe URL from
+            your email/payment provider (Substack, Ghost, Stripe checkout,
+            Mailchimp, ConvertKit, etc.).
+          </p>
+        </form>
+
+        <div class="checkout__aside" style="margin-top:1.2rem;">
+          <h3>What you’ll receive</h3>
+          <ul>
+            <li>1 in-depth memo per month</li>
+            <li>Occasional bonus notes when something big happens</li>
+            <li>Access to future archives, depending on your setup</li>
+            <li>Priority notice for any workshops or products</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials section -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-heading section-heading--center">
+        <h2>What readers might say about it</h2>
+        <p>
+          As you gather real testimonials, you can swap these placeholders for
+          quotes from founders, operators and other readers.
+        </p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="feature">
+          <div class="feature__icon">💬</div>
+          <h3>“Five minutes, real insight.”</h3>
+          <p>
+            “It picks out the political and business angles that actually
+            matter. I don’t feel behind on what’s going on anymore.”
+          </p>
+          <p class="footer__small">— Fictional Founder</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">💬</div>
+          <h3>“Cuts through the noise.”</h3>
+          <p>
+            “Instead of doomscrolling, I read one memo, get the context, and
+            know what to pay attention to for my company.”
+          </p>
+          <p class="footer__small">— Fictional Operator</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">💬</div>
+          <h3>“Serious, but fun to read.”</h3>
+          <p>
+            “It’s about power and politics, but written like a friend explaining
+            it over coffee. Smart, sharp and surprisingly enjoyable.”
+          </p>
+          <p class="footer__small">— Fictional Investor</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- “Let me read it first” / sample issue block -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading section-heading--center">
+        <h2>Let me read it first</h2>
+        <p>
+          Share a sample issue so people can see what they’re getting. You can
+          link directly to a public post or a PDF preview.
+        </p>
+      </div>
+
+      <div class="plans">
+        <article class="plan-card" style="grid-column: span 3; max-width:720px; margin:0 auto;">
+          <h3>Sample issue: How power really moves your market</h3>
+          <p class="plan-card__tagline">
+            An example memo breaking down a real political or regulatory shift
+            and what it means for builders.
+          </p>
+          <ul class="plan-card__list">
+            <li>Quick context on what happened and why it matters</li>
+            <li>The incentives of each major player involved</li>
+            <li>How this ripples into opportunities and risks for you</li>
+            <li>Three concrete actions or questions to take away</li>
+          </ul>
+          <a class="btn btn--outline" href="#">
+            Read a sample issue
+          </a>
+          <p style="font-size:0.8rem; color:#6b7280; margin-top:0.6rem;">
+            Point this button at a real sample as soon as you have one
+            published.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div>
+        <div class="logo footer__logo">
+          <span class="logo__badge">📕</span>
+          <span class="logo__text">Empire of Influence</span>
+        </div>
+        <p class="footer__tagline">
+          A newsletter about power, written for builders.
+        </p>
+        <p class="footer__small">
+          Written by [Your Name]<br />
+          For enquiries: <a href="mailto:you@example.com">you@example.com</a>
+        </p>
+      </div>
+
+      <div>
+        <h4>Newsletter</h4>
+        <ul class="footer__links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#learn">What you'll learn</a></li>
+          <li><a href="#subscribe">Join for £3/month</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Resources</h4>
+        <ul class="footer__links">
+          <li><a href="#">Sample issue (soon)</a></li>
+          <li><a href="#">Archive (when live)</a></li>
+          <li><a href="#">Speaking</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Follow</h4>
+        <ul class="footer__links">
+          <li><a href="#">Twitter / X</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© <span id="year"></span> The Empire of Influence. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
 
