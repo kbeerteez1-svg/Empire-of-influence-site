@@ -627,6 +627,44 @@ body {
   color: #6b7280;
 }
 
+/* NEW: simple form styling for subscribe page */
+.form-field {
+  margin-bottom: 0.8rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin-bottom: 0.3rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border-radius: 0.75rem;
+  border: 1px solid #4b5563;
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.form-input::placeholder {
+  color: #6b7280;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #f97316;
+  box-shadow: 0 0 0 1px rgba(249, 115, 22, 0.4);
+}
+
+.form-help {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 0.5rem;
+}
+
 /* Responsive */
 @media (max-width: 960px) {
   .hero__inner {
@@ -661,3 +699,4 @@ body {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
