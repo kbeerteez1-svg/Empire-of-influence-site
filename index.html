@@ -2,416 +2,193 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>The Empire of Influence – Monthly Power & Business Newsletter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="The Empire of Influence Newsletter – an exclusive monthly memo on politics, power and entrepreneurship for builders. £3/month, cancel anytime."
-  />
+  <title>Mava Funding — Get Funded</title>
+  <meta name="description" content="Mava Funding: simple evaluation challenges, clear rules, fast onboarding, and a pink-powered trader experience." />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
+
 <body>
   <!-- Sticky Header -->
-  <header class="header">
+  <header class="header" id="top">
     <div class="container header__inner">
-      <div class="logo">
-        <span class="logo__badge">📕</span>
-        <span class="logo__text">Empire of Influence</span>
-      </div>
-      <nav class="nav">
-        <a href="#hero">Home</a>
-        <a href="#about">About</a>
-        <a href="#learn">What you'll learn</a>
-        <a href="book.html">Newsletter</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-      <a class="btn btn--outline header__cta" href="book.html">
-        Join for £3/month
+      <a class="brand" href="#top" aria-label="Mava Funding home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Mava <span>Funding</span></span>
       </a>
-      <button class="header__menu-toggle" id="menuToggle">
+
+      <nav class="nav" id="nav">
+        <a href="#how" class="nav__link">How it works</a>
+        <a href="#plans" class="nav__link">Challenges</a>
+        <a href="#faq" class="nav__link">FAQs</a>
+        <a href="book.html#signup" class="nav__link nav__link--pill">Get Funded</a>
+      </nav>
+
+      <button class="navToggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#hero" data-mobile-link>Home</a>
-      <a href="#about" data-mobile-link>About</a>
-      <a href="#learn" data-mobile-link>What you'll learn</a>
-      <a href="book.html" data-mobile-link>Newsletter</a>
-      <a href="#faq" data-mobile-link>FAQ</a>
-      <a class="btn btn--primary" href="book.html">
-        Join for £3/month
-      </a>
-    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="container hero__inner">
-      <!-- Left: Copy -->
-      <div class="hero__copy">
-        <p style="text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.75rem; color:#9ca3af; margin-bottom:0.4rem;">
-          Monthly newsletter
-        </p>
-        <h1>
-          The Empire of Influence<br />
-          <span style="font-size: 0.7em; font-weight: 400;">
-            A memo on politics, power &amp; business for builders.
-          </span>
-        </h1>
-        <p>
-          A no-fluff newsletter for people who want to build things that matter:
-          companies, movements, careers – and understand the political forces
-          and power structures that shape them.
-        </p>
+  <!-- Hero -->
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <div class="pill">Pink-powered prop challenges</div>
+          <h1>Trade smart. <span class="grad">Get funded.</span> Get paid.</h1>
+          <p>
+            Mava Funding offers evaluation challenges with clear rules, realistic targets,
+            and a trader-first experience. No crypto hype. No futures jargon. Just clean rules and execution.
+          </p>
 
-        <div class="hero__highlights">
-          <div class="hero-pill">🧠 Strategic power thinking</div>
-          <div class="hero-pill">🏛 Politics × business decoded</div>
-          <div class="hero-pill">📩 One focused memo each month</div>
-        </div>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#plans">View Challenges</a>
+            <a class="btn btn--ghost" href="book.html#signup">Start Evaluation</a>
+          </div>
 
-        <div class="hero__cta-row">
-          <a class="btn btn--primary" href="book.html">
-            Join for £3/month
-          </a>
-          <button class="btn btn--ghost" data-scroll-to="#about">
-            See what you’ll get
-          </button>
-        </div>
-
-        <div class="hero__meta">
-          <span>✔ £3/month, cancel anytime</span>
-          <span>✔ Serious ideas, quick to read</span>
-          <span>✔ Written for founders, operators &amp; ambitious employees</span>
-        </div>
-      </div>
-
-      <!-- Right: “What you get” card -->
-      <div class="hero__card">
-        <h2>What you get for £3/month</h2>
-        <div class="book-hero">
-          <div class="book-hero__cover">
-            <div class="book-spine"></div>
-            <div class="book-front">
-              <div class="book-title">THE EMPIRE<br />OF INFLUENCE</div>
-              <div class="book-subtitle">
-                Monthly Power &amp;<br />Strategy Memo
-              </div>
-              <div class="book-author">by [Your Name]</div>
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__num">Fast</div>
+              <div class="stat__label">Onboarding</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Clear</div>
+              <div class="stat__label">Rules</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Up to 95%</div>
+              <div class="stat__label">Profit Split</div>
             </div>
           </div>
-          <ul class="hero-card__list">
-            <li>Breakdowns of real political &amp; market moves</li>
-            <li>How incentives shape the world you’re building in</li>
-            <li>Frameworks and mental models you can reuse</li>
-            <li>Context that makes the news actually useful</li>
-          </ul>
         </div>
 
-        <div class="hero-card__price">
-          <div class="hero-card__price-now">
-            <span class="label">Membership</span>
-            <span class="price">£3<span>/month</span></span>
-          </div>
-        </div>
-
-        <a class="btn btn--primary btn--full" href="book.html">
-          Go to subscribe page
-        </a>
-        <div class="hero-card__foot">
-          Cancel anytime in a couple of clicks. No long-term commitments.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About the Newsletter -->
-  <section class="section section--alt" id="about">
-    <div class="container">
-      <div class="section-heading">
-        <h2>Why this newsletter exists</h2>
-        <p>
-          The Empire of Influence is for people who know “hard work” isn’t
-          enough. Power, policy and perception decide who gets heard and who
-          gets left behind. Each issue shows you how to play the real game.
-        </p>
-      </div>
-
-      <div class="grid grid--3">
-        <div class="feature">
-          <div class="feature__icon">🏛</div>
-          <h3>Politics made practical</h3>
-          <p>
-            Forget abstract theory. You’ll see how political incentives really
-            drive markets, regulations and opportunities – translated into plain
-            English and tied to what you’re building.
-          </p>
-        </div>
-        <div class="feature">
-          <div class="feature__icon">📈</div>
-          <h3>Business strategy with teeth</h3>
-          <p>
-            Learn how founders, executives and investors use influence, timing
-            and leverage to dominate markets instead of just “competing”.
-          </p>
-        </div>
-        <div class="feature">
-          <div class="feature__icon">🧩</div>
-          <h3>Frameworks you can use</h3>
-          <p>
-            Copy-and-paste mental models, power maps and step-by-step playbooks
-            you can apply to your startup, career or team this month.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- What You'll Learn -->
-  <section class="section" id="learn">
-    <div class="container">
-      <div class="section-heading section-heading--center">
-        <h2>What you’ll see inside</h2>
-        <p>
-          Issues are structured so you can either read them straight through or
-          dip into the section that gives you an immediate edge.
-        </p>
-      </div>
-
-      <div class="plans">
-        <article class="plan-card">
-          <h3>Power in the real world</h3>
-          <p class="plan-card__tagline">How incentives quietly shape everything</p>
-          <ul class="plan-card__list">
-            <li>Breakdowns of current political &amp; market moves</li>
-            <li>Why certain decisions are really being made</li>
-            <li>Simple power maps you can reuse</li>
-            <li>Case studies from tech, finance &amp; media</li>
-          </ul>
-        </article>
-
-        <article class="plan-card">
-          <h3>Entrepreneurship &amp; policy</h3>
-          <p class="plan-card__tagline">Building with leverage, not just hustle</p>
-          <ul class="plan-card__list">
-            <li>How regulation creates hidden opportunities</li>
-            <li>Finding power gaps in your market</li>
-            <li>Designing offers that are politically smart</li>
-            <li>Playbooks for de-risking what you’re building</li>
-          </ul>
-        </article>
-
-        <article class="plan-card">
-          <h3>Influence at work</h3>
-          <p class="plan-card__tagline">Winning support for your ideas</p>
-          <ul class="plan-card__list">
-            <li>Influence maps for companies &amp; orgs</li>
-            <li>How to get buy-in from gatekeepers &amp; skeptics</li>
-            <li>Narrative &amp; positioning examples you can copy</li>
-            <li>Negotiation tactics rooted in incentives</li>
-          </ul>
-        </article>
-
-        <article class="plan-card plan-card--highlight">
-          <div class="plan-card__badge">Ongoing</div>
-          <h3>Personal power &amp; positioning</h3>
-          <p class="plan-card__tagline">
-            Becoming the person people don’t ignore
-          </p>
-          <ul class="plan-card__list">
-            <li>Designing a reputation strategy that compounds</li>
-            <li>Networking without feeling fake or transactional</li>
-            <li>Decision-making under uncertainty</li>
-            <li>Updates as your “empire of influence” grows</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="section section--alt" id="testimonials">
-    <div class="container">
-      <div class="section-heading section-heading--center">
-        <h2>What readers could be saying</h2>
-        <p>
-          Add real testimonials here as they come in. For now, these are
-          placeholders for the kind of feedback you’re aiming for.
-        </p>
-      </div>
-
-      <div class="grid grid--3">
-        <div class="feature">
-          <div class="feature__icon">💬</div>
-          <h3>“I finally understand the game.”</h3>
-          <p>
-            “These memos connected dots between politics and business that I’d
-            felt for years but never had language for. They changed how I think
-            about my startup.”
-          </p>
-          <p class="footer__small">— Fictional Founder, SaaS company</p>
-        </div>
-        <div class="feature">
-          <div class="feature__icon">💬</div>
-          <h3>“Required reading for operators.”</h3>
-          <p>
-            “If you work anywhere near strategy, policy, or leadership, this
-            newsletter is a must-read. It’s that mix of examples and tools.”
-          </p>
-          <p class="footer__small">— Fictional COO, Logistics firm</p>
-        </div>
-        <div class="feature">
-          <div class="feature__icon">💬</div>
-          <h3>“Not just theory.”</h3>
-          <p>
-            “I used one framework from last month’s memo in a board meeting and
-            it completely shifted the conversation in our favour.”
-          </p>
-          <p class="footer__small">— Fictional Investor</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section section--alt" id="faq">
-    <div class="container">
-      <div class="section-heading section-heading--center">
-        <h2>Frequently asked questions</h2>
-        <p>If you’re wondering it, somebody else probably did too.</p>
-      </div>
-
-      <div class="accordion">
-        <div class="accordion__item">
-          <button class="accordion__header">
-            <span>Who is this newsletter actually for?</span>
-            <span class="accordion__icon">+</span>
-          </button>
-          <div class="accordion__body">
-            <p>
-              Founders, operators, ambitious employees, policy nerds, and
-              anyone who’s realised that “just being good at the work” isn’t
-              enough. You don’t need to be into party politics – you do need to
-              care about how decisions get made.
-            </p>
-          </div>
-        </div>
-
-        <div class="accordion__item">
-          <button class="accordion__header">
-            <span>Do I need any background in politics?</span>
-            <span class="accordion__icon">+</span>
-          </button>
-          <div class="accordion__body">
-            <p>
-              Nope. The newsletter assumes zero prior knowledge. You’ll learn
-              the minimum effective concepts and see them used in real business
-              and career situations.
-            </p>
-          </div>
-        </div>
-
-        <div class="accordion__item">
-          <button class="accordion__header">
-            <span>How is the newsletter delivered?</span>
-            <span class="accordion__icon">+</span>
-          </button>
-          <div class="accordion__body">
-            <p>
-              Each issue is delivered straight to your inbox, and you can also
-              host an archive on your platform of choice (Substack, Ghost,
-              custom site, etc.). Update this section to match your real
-              delivery setup.
-            </p>
-          </div>
-        </div>
-
-        <div class="accordion__item">
-          <button class="accordion__header">
-            <span>Can I share issues with my team or friends?</span>
-            <span class="accordion__icon">+</span>
-          </button>
-          <div class="accordion__body">
-            <p>
-              Solo memberships are for one person. If you want to use the
-              material across your team or organisation, you can offer a
-              separate team plan or workshop – update this text to fit your
-              offer.
-            </p>
-          </div>
-        </div>
-
-        <div class="accordion__item">
-          <button class="accordion__header">
-            <span>What if I don’t like it?</span>
-            <span class="accordion__icon">+</span>
-          </button>
-          <div class="accordion__body">
-            <p>
-              You can cancel anytime. If you want to offer refunds for the last
-              charge or a trial period, customise this section based on what you
-              actually want to promise subscribers.
+        <div class="hero__card">
+          <div class="cardGlow"></div>
+          <div class="card">
+            <h3>What you’ll do</h3>
+            <ul class="checklist">
+              <li>Pick a challenge type</li>
+              <li>Follow drawdown rules</li>
+              <li>Hit the profit target</li>
+              <li>Unlock funded access</li>
+            </ul>
+            <a class="btn btn--primary btn--wide" href="book.html#signup">Get Started</a>
+            <p class="fineprint">
+              Trading involves risk. Evaluations are simulated and performance is not guaranteed.
             </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer" id="contact">
-    <div class="container footer__grid">
-      <div>
-        <div class="logo footer__logo">
-          <span class="logo__badge">📕</span>
-          <span class="logo__text">Empire of Influence</span>
-        </div>
-        <p class="footer__tagline">
-          A newsletter about power, written for builders.
-        </p>
-        <p class="footer__small">
-          Written by [Your Name]<br />
-          For enquiries: <a href="mailto:you@example.com">you@example.com</a>
-        </p>
-      </div>
-
-      <div>
-        <h4>Newsletter</h4>
-        <ul class="footer__links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#learn">What you'll learn</a></li>
-          <li><a href="book.html">Join for £3/month</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Resources</h4>
-        <ul class="footer__links">
-          <li><a href="#">Sample issue (soon)</a></li>
-          <li><a href="book.html">Subscribe page</a></li>
-          <li><a href="#">Speaking</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Follow</h4>
-        <ul class="footer__links">
-          <li><a href="#">Twitter / X</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">Instagram</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__bottom">
+    <!-- How it works -->
+    <section class="section" id="how">
       <div class="container">
-        <p>© <span id="year"></span> The Empire of Influence. All rights reserved.</p>
+        <div class="section__head">
+          <h2>How it works</h2>
+          <p>Simple steps. Transparent rules. Consistent process.</p>
+        </div>
+
+        <div class="grid3">
+          <div class="tile">
+            <div class="tile__icon">1</div>
+            <h3>Choose a challenge</h3>
+            <p>Select Instant Pro, One Step, Two Step, or Three Step — then pick your account size.</p>
+          </div>
+          <div class="tile">
+            <div class="tile__icon">2</div>
+            <h3>Trade responsibly</h3>
+            <p>Respect daily and maximum drawdown limits while executing your strategy.</p>
+          </div>
+          <div class="tile">
+            <div class="tile__icon">3</div>
+            <h3>Get funded</h3>
+            <p>Meet the objectives and unlock funded access with a competitive profit split.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
+
+    <!-- Challenges / Plans -->
+    <section class="section" id="plans">
+      <div class="container">
+        <div class="section__head">
+          <h2>Challenges</h2>
+          <p>FXIFY-style selection, with Titan-style challenge parameters.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Evaluation types">
+          <button class="tab is-active" data-eval="instant" role="tab" aria-selected="true">Instant Pro</button>
+          <button class="tab" data-eval="one" role="tab" aria-selected="false">One Step</button>
+          <button class="tab" data-eval="two" role="tab" aria-selected="false">Two Step</button>
+          <button class="tab" data-eval="three" role="tab" aria-selected="false">Three Step</button>
+        </div>
+
+        <div class="noteBar">
+          <div class="noteBar__title">Key terms</div>
+          <div class="noteBar__items" id="termsLine">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+
+        <div class="planGrid" id="planGrid" aria-live="polite">
+          <!-- Filled by JS -->
+        </div>
+
+        <div class="centerCta">
+          <a class="btn btn--primary" href="book.html#signup">Start Evaluation</a>
+          <a class="btn btn--ghost" href="#faq">Read FAQs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2>FAQs</h2>
+          <p>Answers to the most common questions.</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Do you support crypto or futures products?</summary>
+            <p>No — this site and messaging is intentionally not focused on crypto or futures.</p>
+          </details>
+          <details>
+            <summary>What are drawdown rules?</summary>
+            <p>Each challenge has daily and maximum drawdown limits. Always trade within the stated limits.</p>
+          </details>
+          <details>
+            <summary>Is there a time limit?</summary>
+            <p>These challenges are listed as “Unlimited” max days in the challenge table.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <div class="brand brand--footer">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span class="brand__text">Mava <span>Funding</span></span>
+          </div>
+          <p class="fineprint">
+            Trading carries risk. This website is for informational purposes only and does not constitute financial advice.
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <a href="#how">How it works</a>
+          <a href="#plans">Challenges</a>
+          <a href="book.html#signup">Get Funded</a>
+        </div>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
-
-
-
-
