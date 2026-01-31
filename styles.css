@@ -308,6 +308,21 @@ a{color:inherit;text-decoration:none}
   display: block;
   object-fit: contain;
 }
+/* Keep header slim */
+.header__inner{
+  align-items: center;
+  padding: 14px 0;         /* keep normal */
+}
+
+/* Allow logo to overflow outside the header */
+.header{
+  overflow: visible;
+}
+
+/* Make logo big WITHOUT making header taller */
+.brand{
+  display: inline-flex
+.brand__logo{ height: 110px; margin: -28px 0; }
 
 @media (max-width: 520px) {
   .brand__logo { height: 90px !important; }
