@@ -80,7 +80,7 @@ a{color:inherit;text-decoration:none}
 
 /* Bigger logo WITHOUT making header taller */
 .brand__logo{
-  height: 72px;   /* ← was 56px */
+  height: 200px; 
   width: auto;
   display:block;
   object-fit:contain;
