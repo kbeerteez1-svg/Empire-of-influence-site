@@ -69,6 +69,26 @@ a{color:inherit;text-decoration:none}
   border:1px solid rgba(255,79,216,.45);
   background: rgba(255,79,216,.12);
 }
+/* Use uploaded logo image instead of the gradient square */
+.brand__mark{ display:none; }
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+/* Bigger logo WITHOUT making header taller */
+.brand__logo{
+  height: 56px;
+  width: auto;
+  display:block;
+  object-fit:contain;
+}
+
+@media (max-width: 520px){
+  .brand__logo{ height: 44px; }
+}
 
 /* Mobile nav */
 .navToggle{
