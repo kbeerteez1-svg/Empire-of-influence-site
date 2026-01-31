@@ -302,7 +302,7 @@ a{color:inherit;text-decoration:none}
 .footer__links a:hover{color:#fff}
 /* Logo Image */
 .brand__logo {
-  height: 42px;
+  height: 70px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -310,6 +310,5 @@ a{color:inherit;text-decoration:none}
 }
 
 @media (max-width: 520px) {
-  .brand__logo { height: 34px; }
+  .brand__logo { height: 48px; }
 }
-
