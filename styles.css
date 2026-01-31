@@ -321,14 +321,21 @@ a{color:inherit;text-decoration:none}
 .footer__links{display:flex; gap:14px; flex-wrap:wrap; color: rgba(255,255,255,.80)}
 .footer__links a:hover{color:#fff}
 /* Logo image (slightly bigger, header stays normal) */
+/* Logo image (bigger, but header stays normal height) */
 .brand__logo{
-  height: 52px;      /* slightly bigger than the original */
+  height: 56px;   /* increase/decrease this number */
   width: auto;
   display: block;
   object-fit: contain;
-  filter: drop-shadow(0 0 14px rgba(255, 79, 216, 0.25));
 }
 
 @media (max-width: 520px){
-  .brand__logo{ height: 42px; }
+  .brand__logo{
+    height: 44px;
+  }
+}
+
+/* Footer logo slightly smaller */
+.brand__logo--footer{
+  height: 38px;
 }
