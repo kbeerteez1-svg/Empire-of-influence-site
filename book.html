@@ -3,150 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Get Funded — Mava Funding</title>
-  <meta name="description" content="Start your evaluation with Mava Funding." />
+  <title>Book Dani Saad</title>
   <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
 </head>
 
 <body>
-  <header class="header" id="top">
-    <div class="container header__inner">
-      <a class="brand" href="index.html#top" aria-label="Mava Funding home">
-  <img src="assets/mava-logo.png" alt="Mava Funding" class="brand__logo">
-</a>
-      
 
-      <nav class="nav" id="nav">
-        <a href="index.html#how" class="nav__link">How it works</a>
-        <a href="index.html#plans" class="nav__link">Plans</a>
-        <a href="index.html#faq" class="nav__link">FAQs</a>
-        <a href="book.html#signup" class="nav__link nav__link--pill">Get Funded</a>
-      </nav>
+<header class="header">
+  <div class="container header__inner">
+    <div class="brand">Dani Saad 💗</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
 
-      <div class="header__actions">
-        <a class="btn btn--ghost" href="index.html#plans">View Plans</a>
-        <a class="btn btn--primary" href="book.html#signup">Start</a>
+<section class="section">
+  <div class="container">
+    <h1>Book Your Session</h1>
+    <p>Choose your package and secure your transformation.</p>
 
-        <button class="burger" id="burger" aria-label="Open menu" aria-controls="nav" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
+    <form class="form">
+      <label>Full Name
+        <input type="text" required>
+      </label>
 
-  <main>
-    <section class="section">
-      <div class="container">
-        <div class="section__head">
-          <h1 class="h1">Get Funded with Mava</h1>
-          <p class="lead">Choose a plan and submit the form. Connect this to your checkout later (Stripe, ThriveCart, etc.).</p>
-        </div>
+      <label>Email
+        <input type="email" required>
+      </label>
 
-        <div class="grid-2">
-          <div class="panel">
-            <h2 class="h2">Select your evaluation</h2>
+      <label>Choose Package
+        <select required>
+          <option>£200 - Secure Your Wife</option>
+          <option>£500 - Secure & Obsession Protocol</option>
+        </select>
+      </label>
 
-            <div class="selector" role="group" aria-label="Plan selector">
-              <button class="seg" data-plan="50k">50K</button>
-              <button class="seg is-active" data-plan="100k">100K</button>
-              <button class="seg" data-plan="250k">250K</button>
-            </div>
+      <label>Tell Dani Your Situation
+        <textarea rows="4"></textarea>
+      </label>
 
-            <div class="summary" id="planSummary">
-              <!-- Filled by JS -->
-            </div>
+      <button class="btn btn--primary btn--wide">Submit Application</button>
+    </form>
+  </div>
+</section>
 
-            <div class="cta-band cta-band--tight">
-              <div>
-                <h3>Need help choosing?</h3>
-                <p class="muted">Start with 50K if you’re building consistency. Scale up after proof.</p>
-              </div>
-              <a class="btn btn--ghost" href="index.html#plans">Compare Plans</a>
-            </div>
-          </div>
-
-          <div class="panel" id="signup">
-            <h2 class="h2">Start your application</h2>
-            <p class="muted">This uses a Netlify form so it works instantly on your current deploy.</p>
-
-            <!-- Netlify form (works when deployed on Netlify) -->
-            <form class="form" name="mava-application" method="POST" data-netlify="true">
-              <input type="hidden" name="form-name" value="mava-application" />
-
-              <label>
-                Full name
-                <input name="name" type="text" autocomplete="name" required />
-              </label>
-
-              <label>
-                Email
-                <input name="email" type="email" autocomplete="email" required />
-              </label>
-
-              <label>
-                Plan
-                <select name="plan" id="planField" required>
-                  <option value="50K">50K</option>
-                  <option value="100K" selected>100K</option>
-                  <option value="250K">250K</option>
-                </select>
-              </label>
-
-              <label>
-                Experience level
-                <select name="experience" required>
-                  <option value="Beginner">Beginner</option>
-                  <option value="Intermediate" selected>Intermediate</option>
-                  <option value="Advanced">Advanced</option>
-                </select>
-              </label>
-
-              <label>
-                Message (optional)
-                <textarea name="message" rows="4" placeholder="Anything we should know?"></textarea>
-              </label>
-
-              <button class="btn btn--primary btn--full" type="submit">Submit &amp; Continue</button>
-
-              <p class="fine">
-                After you connect checkout, replace this form submit with your payment redirect.
-              </p>
-            </form>
-          </div>
-        </div>
-
-        <div class="note">
-          <strong>Next step:</strong> If you want the button to go to checkout,
-          tell me what you’re using (Stripe payment link, ThriveCart, Shopify, etc.)
-          and I’ll wire it in.
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container footer__grid">
-        <div>
-          <div class="brand brand--footer">
-            <span class="brand__mark" aria-hidden="true"></span>
-            <span class="brand__text">Mava <span>Funding</span></span>
-          </div>
-          <p class="muted">Not investment advice. Trading involves risk.</p>
-        </div>
-
-        <div class="footer__links">
-          <a href="index.html#how">How it works</a>
-          <a href="index.html#plans">Plans</a>
-          <a href="index.html#faq">FAQs</a>
-        </div>
-
-        <div class="footer__fine">
-          <p class="muted">© <span id="year"></span> Mava Funding.</p>
-        </div>
-      </div>
-    </footer>
-  </main>
-
-  <a class="to-top" href="#top" aria-label="Back to top">↑</a>
 </body>
 </html>
